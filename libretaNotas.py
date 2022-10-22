@@ -18,7 +18,6 @@ while(True):
     name = sheet['B' + str(row)].value
 
     if name == None:
-        print('if name == None: True!!!')
         break
 
     curso = sheet['C8'].value
@@ -36,6 +35,7 @@ while(True):
     alumnoData[name].setdefault('nroOrden', nroOrden)
     alumnoData[name].setdefault('cursos', {})
     alumnoData[name]['cursos'].setdefault('curso1', curso)
+
     print(row)
     row += 1
 
@@ -50,13 +50,13 @@ while(True):
 
 
 # print('B47: ' + str(sheet['B47'].value))
-print('C8: ' + sheet['C8'].value)
-print('D8: ' + sheet['C8'].value)
-print('GRADO: ' + str(GRADO))
-print('SECCION: ' + str(SECCION))
-print('max_row: ' + str(sheet.max_row))
-print('max_column: ' + str(sheet.max_column))
-print()
+# print('C8: ' + sheet['C8'].value)
+# print('D8: ' + sheet['C8'].value)
+# print('GRADO: ' + str(GRADO))
+# print('SECCION: ' + str(SECCION))
+# print('max_row: ' + str(sheet.max_row))
+# print('max_column: ' + str(sheet.max_column))
+# print()
 print(pprint.pformat(alumnoData))
 
 
