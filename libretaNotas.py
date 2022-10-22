@@ -1,4 +1,3 @@
-from operator import index
 import openpyxl
 import pprint
 
